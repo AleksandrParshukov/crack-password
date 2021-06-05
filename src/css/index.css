@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "My font";
+  src: url("./fonts/MyFont-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+body {  
+  width: 100%;
+  height: 100%;
+  background-color: #F0F0F0;
+  margin: 0;
+  border: none;
+}
+
+.page-main {
+  width: 920px;
+  height: 100%;
+  padding: 85px 145px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+}
+
+.input {
+  width: 630px;
+  height: 110px;
+  padding: 0 30px;
+  margin-bottom: 75px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-number {
+  font-family: "My font", "Arial", sans-serif;
+  font-size: 70px;
+  text-align: center;
+  width: 90px;
+  height: 110px;
+  box-sizing: border-box;
+  border-bottom: 15px solid #270F45;
+}
+
+.numpad {
+  width: 420px;
+  height: 300px;
+  padding: 30px 45px;
+  margin-bottom: 75px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button {
+  font-family: "My font", "Arial", sans-serif;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  margin: 0 30px 30px 0;
+  background: transparent;
+  border: 5px solid rgba(110, 113, 103, 0.4);
+  border-radius: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.button:nth-child(4n) {
+  margin-right: 0;
+}
+
+.log {
+  width: 630px;
+  height: 250px;
+  background: #CEC8C5;
+}
+
+.log-row {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
