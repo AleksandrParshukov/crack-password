@@ -1,7 +1,7 @@
 import React from "react";
 
 const BUTTONS = [1, 2, 3, "c", 4, 5, 6, 0, 7, 8, 9, "ok"];
-const LOG_ROWS = 10;
+const LOG_ROWS = 9;
 
 function randomPassword() {
   let array = [0, 1,2,3,4,5,6,7,8,9];
@@ -27,14 +27,14 @@ function checkPassword (current, right) {
   console.log(current)
   for (let i = 0; i < current.length; i++) {
     if (current[i] === right[i]) {
-      result += "*";
+      result += "A";
     } else if (right.includes(current[i])) {
-      result += "o";
+      result += "B";
     }
   }
 
   while (result.length < right.length) {
-    result += "-";
+    result += "C";
   }
 
   return result.split('').sort().join('');;
@@ -102,7 +102,9 @@ class App extends React.Component {
     const result = checkPassword(curPass, this.state.rightPassword);
     let currentLog = this.state.log;
 
-    if (result === "****") {
+    console.log(result);
+
+    if (result === "AAAA") {
       currentLog = updateLog(currentLog, "Well Done!");
 
       this.setState({

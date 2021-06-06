@@ -25,13 +25,15 @@ body {
   margin: 0 auto;
   background-color: #FFFFFF;
   box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .input {
   width: 630px;
   height: 110px;
   padding: 0 30px;
-  margin-bottom: 75px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -71,18 +73,27 @@ body {
   cursor: pointer;
 }
 
+.button:active {
+  transform: scale(0.95);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(110, 113, 103, 0.5);
+}
+
 .button:nth-child(4n) {
   margin-right: 0;
 }
 
 .log {
-  width: 630px;
-  height: 250px;
+  font-family: "My font", "Arial", sans-serif;
+  font-size: 20px;
+  width: 210px;
+  height: 300px;
+  padding: 10px;
+  box-sizing: border-box;
   background: #CEC8C5;
 }
 
 .log-row {
-  font-size: 14px;
   margin-top: 0;
   margin-bottom: 5px;
 }
